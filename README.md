@@ -10,7 +10,7 @@ Installation
 Run the following commands in a terminal:
 
 ```
-git clone https://github.com/jon-whit/vim-config.git
+git clone --recursive https://github.com/jon-whit/vim-config.git
 ln -s vim-config/.vim .vim
 ln -s vim-config/.vimrc .vimrc
 ```
