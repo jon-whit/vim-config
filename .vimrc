@@ -10,6 +10,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
+Plugin 'bling/vim-airline' # Add to vim-config repo
+Plugin 'vim-airline/vim-airline-themes' # Add to vim-config repo
+" Plugin 'fatih/vim-go' # Add to vim-config repo
+" Plugin 'junegunn/fzf' # Add to vim-config repo
+" Plugin 'junegunn/fzf.vim' # Add to vim-config repo
+" Plugin 'tmux-plugins/vim-tmux-focus-events' # Add to vim-config repo
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,3 +40,11 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 map <C-n> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
+" map <C-p> :FZF<CR>
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='simple'
