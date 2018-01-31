@@ -10,12 +10,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
-Plugin 'bling/vim-airline' # Add to vim-config repo
-Plugin 'vim-airline/vim-airline-themes' # Add to vim-config repo
-" Plugin 'fatih/vim-go' # Add to vim-config repo
-" Plugin 'junegunn/fzf' # Add to vim-config repo
-" Plugin 'junegunn/fzf.vim' # Add to vim-config repo
-" Plugin 'tmux-plugins/vim-tmux-focus-events' # Add to vim-config repo
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'fatih/vim-go'
+" Plugin 'junegunn/fzf' " Add to vim-config repo
+" Plugin 'junegunn/fzf.vim' " Add to vim-config repo
+" Plugin 'tmux-plugins/vim-tmux-focus-events' " Add to vim-config repo
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,6 +34,7 @@ filetype plugin indent on    " required
 " "
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
+set number " Enable line numbers
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd StdinReadPre * let s:std_in=1
