@@ -25,3 +25,7 @@
 [submodule "/home/jonathan.whitaker/.vim/bundle/vim-airline-themes"]
 	path = /home/jonathan.whitaker/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+
+[submodule ".vim/bundle/fzf"]
+	path = .vim/bundle/fzf
+	url = https://github.com/junegunn/fzf.git
