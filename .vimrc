@@ -41,10 +41,11 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 map <C-n> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
 map <C-p> :FZF<CR>
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='simple'
+
+noremap <C-j> <C-w><C-j> " Down a buffer
+noremap <C-k> <C-w><C-k> " Up a buffer
+noremap <C-h> <C-w><C-h> " Left a buffer
+noremap <C-l> <C-w><C-l> " Right a buffer
