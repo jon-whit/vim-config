@@ -14,7 +14,6 @@ Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
 Plugin 'junegunn/fzf'
-" Plugin 'tmux-plugins/vim-tmux-focus-events' " Add to vim-config repo
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,9 +29,7 @@ filetype plugin indent on    " required
 " " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " " :PluginClean      - confirms removal of unused plugins; append `!` to
 " auto-approve removal
-" "
-" " see :h vundle for more details or wiki for FAQ
-" " Put your non-Plugin stuff after this line
+" " " " see :h vundle for more details or wiki for FAQ " " Put your non-Plugin stuff after this line
 set number " Enable line numbers
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -42,7 +39,19 @@ map <C-n> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
 map <C-p> :FZF<CR>
 
+" air-line
 let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+" old vim-powerline symbols
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
 let g:airline_theme='simple'
 
 noremap <C-j> <C-w><C-j> " Down a buffer

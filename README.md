@@ -4,6 +4,13 @@ Plugin List
 * [fugitive.vim](https://vimawesome.com/plugin/fugitive-vim)
 * [The NERD tree](https://vimawesome.com/plugin/nerdtree-red)
 * [Tagbar](https://vimawesome.com/plugin/tagbar)
+* [vim-go](https://vimawesome.com/plugin/vim-go-sparks-fly)
+* [fzf](https://vimawesome.com/plugin/fzf) ^
+* [vim-airline](https://vimawesome.com/plugin/vim-airline)
+* [vim-airline-themes](https://vimawesome.com/plugin/vim-airline-themes)
+
+  ^ indicates a custom configuration must be performed. For example, maybe a system package
+    needs to be installed to support the addon.
 
 Installation
 ============
