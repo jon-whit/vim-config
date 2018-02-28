@@ -14,6 +14,7 @@ Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
 Plugin 'junegunn/fzf'
+Plugin 'airblade/vim-gitgutter'
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,6 +54,9 @@ let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 let g:airline_theme='simple'
+
+" vim-gitgutter
+set updatetime=100
 
 noremap <C-j> <C-w><C-j> " Down a buffer
 noremap <C-k> <C-w><C-k> " Up a buffer
